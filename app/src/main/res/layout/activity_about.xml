@@ -82,6 +82,13 @@
                     >
 
                     <!-- version -->
+                    <Button
+                        android:id="@+id/Map"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="onClick"
+                        android:text="Map" />
+
                     <RelativeLayout
                         android:id="@+id/relative_layout_version"
                         android:layout_width="match_parent"
@@ -112,8 +119,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="@string/version"
-                                android:textSize="@dimen/material_generic_title"
-                                />
+                                android:textSize="@dimen/material_generic_title" />
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"

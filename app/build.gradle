@@ -26,7 +26,7 @@ android {
 
     defaultConfig {
         applicationId "com.amaze.filemanager"
-        minSdkVersion 14
+        minSdkVersion 21
         targetSdkVersion 29
         versionCode 97
         versionName "3.6.3"
@@ -109,6 +109,7 @@ android {
 
 dependencies {
 
+    implementation 'com.google.android.gms:play-services-maps:17.0.0'
     modules {
         module("org.bouncycastle:bcprov-jdk15to18") {
             replacedBy("org.bouncycastle:bcprov-jdk15on")
