@@ -66,5 +66,6 @@
     <item
         android:id="@+id/view"
         android:title="" />
+    <item android:title="lab3Test" />
 
 </menu>
