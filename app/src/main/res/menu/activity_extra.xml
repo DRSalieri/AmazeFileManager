@@ -41,13 +41,11 @@
         </menu>
 
     </item>
-    <item android:id="@+id/history"
-        android:icon="@drawable/ic_history_white_24dp"
-        app:showAsAction="ifRoom"
-        android:title="@string/history"/>
     <item
-        android:id="@+id/view"
-        android:title=""/>
+        android:id="@+id/history"
+        android:icon="@drawable/ic_history_white_24dp"
+        android:title="@string/history"
+        app:showAsAction="ifRoom" />
     <item
         android:id="@+id/hiddenitems"
         android:visible="false"
@@ -65,5 +63,8 @@
         android:id="@+id/exit"
         android:title="@string/exit"
         android:orderInCategory="100"/>
+    <item
+        android:id="@+id/view"
+        android:title="" />
 
 </menu>

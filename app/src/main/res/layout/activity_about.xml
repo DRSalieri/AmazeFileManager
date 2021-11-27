@@ -266,16 +266,17 @@
                                 android:layout_height="wrap_content"
                                 android:layout_below="@+id/text_view_author_1_title"
                                 android:layout_marginTop="@dimen/material_generic">
+
                                 <TextView
                                     android:id="@+id/text_view_author_1_github"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
                                     android:background="?android:attr/selectableItemBackground"
+                                    android:onClick="onClick"
                                     android:text="@string/github"
                                     android:textColor="@color/accent_red"
-                                    android:layout_alignParentLeft="true"
-                                    android:textSize="@dimen/material_generic_title"
-                                    android:onClick="onClick"/>
+                                    android:textSize="@dimen/material_generic_title" />
                             </RelativeLayout>
                         </RelativeLayout>
                     </RelativeLayout>
