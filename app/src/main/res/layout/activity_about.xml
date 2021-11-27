@@ -112,15 +112,15 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="@string/version"
-                                android:textSize="@dimen/material_generic_title"
-                                />
+                                android:textColor="#FF0000"
+                                android:textSize="@dimen/material_generic_title" />
+
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_below="@+id/text_view_version_title"
                                 android:text="@string/app_version"
-                                android:textSize="@dimen/material_generic_title_summary"
-                                />
+                                android:textSize="@dimen/material_generic_title_summary" />
                         </RelativeLayout>
                     </RelativeLayout>
 
@@ -151,11 +151,12 @@
                             >
 
                             <TextView
+                                style="@android:style/Widget.Holo.TextView"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="@string/changelog"
                                 android:textSize="@dimen/material_generic_title"
-                                />
+                                android:textStyle="bold" />
                         </RelativeLayout>
                     </RelativeLayout>
 
@@ -188,9 +189,9 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:alpha="0.5"
                                 android:text="@string/libraries"
-                                android:textSize="@dimen/material_generic_title"
-                                />
+                                android:textSize="@dimen/material_generic_title" />
                         </RelativeLayout>
                     </RelativeLayout>
                 </LinearLayout>
@@ -322,8 +323,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="@string/author_2"
-                                android:textSize="@dimen/material_generic_title"
-                                />
+                                android:textSize="@dimen/material_generic_title" />
 
                             <RelativeLayout
                                 android:layout_width="match_parent"

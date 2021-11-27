@@ -1,0 +1,87 @@
+warning: LF will be replaced by CRLF in app/src/main/res/layout/copy_dialog.xml.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in app/src/main/res/layout/layout_search.xml.
+The file will have its original line endings in your working directory
+[1mdiff --git a/app/src/main/res/layout/copy_dialog.xml b/app/src/main/res/layout/copy_dialog.xml[m
+[1mindex de624b8..3f45d1d 100644[m
+[1m--- a/app/src/main/res/layout/copy_dialog.xml[m
+[1m+++ b/app/src/main/res/layout/copy_dialog.xml[m
+[36m@@ -56,4 +56,12 @@[m
+         app:layout_constraintEnd_toEndOf="parent"[m
+         app:layout_constraintStart_toStartOf="parent"[m
+         app:layout_constraintTop_toBottomOf="@+id/fileNameText" />[m
+[32m+[m
+[32m+[m[32m    <Button[m
+[32m+[m[32m        android:id="@+id/button"[m
+[32m+[m[32m        android:layout_width="411dp"[m
+[32m+[m[32m        android:layout_height="36dp"[m
+[32m+[m[32m        android:text="Button"[m
+[32m+[m[32m        app:layout_constraintEnd_toEndOf="parent"[m
+[32m+[m[32m        tools:layout_editor_absoluteY="108dp" />[m
+ </androidx.constraintlayout.widget.ConstraintLayout>[m
+[1mdiff --git a/app/src/main/res/layout/layout_search.xml b/app/src/main/res/layout/layout_search.xml[m
+[1mindex 5c32fc3..d888ad8 100644[m
+[1m--- a/app/src/main/res/layout/layout_search.xml[m
+[1m+++ b/app/src/main/res/layout/layout_search.xml[m
+[36m@@ -1,46 +1,46 @@[m
+ <?xml version="1.0" encoding="utf-8"?>[m
+ [m
+[31m-<RelativeLayout[m
+[31m-    xmlns:android="http://schemas.android.com/apk/res/android"[m
+[32m+[m[32m<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"[m
+     xmlns:app="http://schemas.android.com/apk/res-auto"[m
+     android:id="@+id/search_view"[m
+     android:layout_width="match_parent"[m
+     android:layout_height="?attr/actionBarSize"[m
+[31m-    android:background="@drawable/search_view_shape"[m
+[31m-[m
+     android:layout_margin="@dimen/search_view_margin"[m
+[31m-    android:gravity="center_vertical"[m
+[31m-    android:visibility="gone"[m
+[31m-    android:elevation="8dp">[m
+[32m+[m
+[32m+[m[32m    android:background="@drawable/search_view_shape"[m
+[32m+[m[32m    android:elevation="8dp"[m
+[32m+[m[32m    android:gravity="center_vertical">[m
+ [m
+     <ImageView[m
+         android:id="@+id/img_view_back"[m
+         android:layout_width="wrap_content"[m
+         android:layout_height="wrap_content"[m
+[31m-        app:srcCompat="@drawable/ic_arrow_back_black_24dp"[m
+         android:layout_alignParentLeft="true"[m
+         android:layout_centerInParent="true"[m
+         android:layout_marginLeft="@dimen/search_view_back_margin_left_right"[m
+[31m-        android:layout_marginRight="@dimen/search_view_back_margin_left_right"/>[m
+[32m+[m[32m        android:layout_marginRight="@dimen/search_view_back_margin_left_right"[m
+[32m+[m[32m        app:srcCompat="@drawable/ic_arrow_back_black_24dp" />[m
+[32m+[m
+     <androidx.appcompat.widget.AppCompatEditText[m
+         android:id="@+id/search_edit_text"[m
+         android:layout_width="match_parent"[m
+         android:layout_height="match_parent"[m
+[32m+[m[32m        android:layout_toLeftOf="@+id/search_close_btn"[m
+         android:layout_toRightOf="@+id/img_view_back"[m
+         android:hint="@string/search_hint"[m
+[31m-        android:inputType="textAutoComplete"[m
+         android:imeOptions="actionSearch"[m
+[32m+[m[32m        android:inputType="textAutoComplete"[m
+         android:maxLines="1"[m
+[31m-        android:layout_toLeftOf="@+id/search_close_btn"[m
+[31m-        android:theme="@style/appCompatLight"[m
+[31m-        android:textColorHint="?colorAccent"/>[m
+[32m+[m[32m        android:textColorHint="?colorAccent"[m
+[32m+[m[32m        android:theme="@style/appCompatLight" />[m
+[32m+[m
+     <ImageView[m
+         android:id="@+id/search_close_btn"[m
+         android:layout_width="wrap_content"[m
+         android:layout_height="wrap_content"[m
+         android:layout_alignParentRight="true"[m
+[31m-        app:srcCompat="@drawable/ic_close_black_24dp"[m
+         android:layout_centerInParent="true"[m
+         android:layout_marginLeft="@dimen/search_view_info_margin_left_right"[m
+[31m-        android:layout_marginRight="@dimen/search_view_info_margin_left_right"/>[m
+[32m+[m[32m        android:layout_marginRight="@dimen/search_view_info_margin_left_right"[m
+[32m+[m[32m        app:srcCompat="@drawable/ic_close_black_24dp" />[m
+ </RelativeLayout>[m

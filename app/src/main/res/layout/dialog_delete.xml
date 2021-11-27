@@ -17,15 +17,14 @@
 
     <TextView
         android:id="@+id/category_directories"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:layout_width="wrap_content"
         android:text="@string/dialog_delete_category_directories"
         android:textAllCaps="true"
         android:textColor="?android:attr/textColorSecondary"
         android:textSize="@dimen/dialog_category"
-        android:textStyle="bold" >
-    </TextView>
+        android:textStyle="bold"></TextView>
 
     <TextView
         android:id="@+id/list_directories"
